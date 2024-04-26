@@ -1,0 +1,5 @@
+node_modules/
+*packages.json
+*grid.html
+*carrusel.html
+*backup_style.css

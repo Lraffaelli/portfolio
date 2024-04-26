@@ -1,0 +1,83 @@
+@import "../base/_colors";
+@import "../base/_variable";
+@import "../base/_mixins";
+
+#proyectos {
+    @extend %flex-col-all-center;
+    height: fit-content;
+
+    background: linear-gradient(270deg, rgba(42,169,224,1) 0%, rgba(58,80,142,1) 100%);
+    padding: 30px 0;
+    height:100vh;
+
+   h2{
+       color: $white;
+   }
+
+    /* INICIO DE GALERIA DE TRABAJOS CON GRID */
+    .grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .list-grid {
+            position: relative;
+            @extend %flex-col-all-center;
+            height: 350px;
+            background-color: $white;
+            border-radius: 5px;
+            margin: 5px;
+            box-shadow: 0px 0px 4px #666;
+            overflow: hidden;
+            transition: $transition;
+
+            &:hover .title-exper {
+                opacity: 1;
+            }
+
+            &:hover .img-grid img {
+                filter: blur(2px);
+                transform: scale(1.1);
+            }
+
+            .title-exper {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(4, 106, 201, 0.6);
+                color: $white;
+                text-shadow: $text-shadow;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.5s;
+                z-index: 1;
+                cursor: pointer;
+                h3 {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                    padding: 5px;
+                    margin: 0 15px;
+                }
+            }
+
+            .img-grid {
+                height: auto;
+                img {
+                    filter: blur(0px);
+                    transition: all 0.3s ease-in;
+                }
+            }
+        }
+    }
+}

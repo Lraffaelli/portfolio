@@ -1,0 +1,57 @@
+@import "../base/_colors";
+@import "../base/_variable";
+@import "../base/_mixins";
+
+.header {
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $full-width;
+  border-bottom: 2px solid $dark-blue;
+  margin-bottom: 140px;
+  z-index: 100;
+
+  .navbar-header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    .logo-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .isotipo {
+        height: 50px;
+        margin: 0 10px;
+      }
+
+      h1 {
+        font-size: 25px;
+        letter-spacing: 3px;
+        font-weight: 500;
+      }
+    }
+
+    .menu {
+      .link-a {
+        font-size: 14px;
+        color: #666;
+        margin-right: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        &:hover {
+          color: $ligth-blue;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

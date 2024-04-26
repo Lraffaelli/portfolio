@@ -1,0 +1,67 @@
+@import "../base/_colors";
+@import "../base/_variable";
+@import "../base/_mixins";
+
+/* publicaciones */
+#publicaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 4em 0;
+
+    @extend %title-seccion;
+
+    .box-post {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+            border-radius: 3px;
+            padding-bottom: 10px;
+            
+
+            img {
+                width: $full-width;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-size: 10px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: $paragraf-font;
+                text-align: justify;
+                margin: 0 10px;
+            }
+
+            svg {
+                color: $ligth-blue;
+                transition: $transition;
+
+                &:hover {
+                    color: #048d22;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}

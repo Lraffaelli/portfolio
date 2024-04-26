@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Desarrollador web Front-End de la ciudad de Rosario - Santa Fe - Argentina con mas de 10 años de experiencia.
+     Diseñador de páginas web. UX/UI. Programador web. Webmaster. Diseño y desarrollo web "
+    />
+    <meta
+      name="keywords"
+      content="desarrollador,full stack ,diseño web,front-end, rosario, freelance, javascript, developer"
+    />
+
+    <!-- protocolo open graph -->
+    <meta
+      property="og:title"
+      content="Lucas Raffaelli - Desarrollador Frontend"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollador web Front-End de la ciudad de Rosario - Santa Fe - Argentina con mas de 10 años de experiencia.
+   Diseñador de páginas web. UX/UI. Programador web. Webmaster. Diseño y desarrollo web"
+    />
+    <meta property="og:url" content="http://lucasraffaelli.com/" />
+    <meta property="og:image" content="" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lucas Raffaelli - Desarrollador Frontend | Blog</title>
+  </head>
+  <body>
+    <!-- inicio de cabecera -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center aling-items-center">
+          <nav
+            class="navbar-header navbar-expand-lg navbar-light col-md-10 col-sm-12"
+          >
+            <div class="navbar-brand logo-header">
+              <img class="isotipo" src="../assets/img/isotipo.png" alt="Logo" />
+              <h1>Lucas Raffaelli</h1>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu_navegacion"
+              aria-label="menu_navegacion"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul
+              id="menu_navegacion"
+              class="menu navbar-nav navbar collapse navbar-collapse justify-content-end"
+            >
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#inicio">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#experiencia"
+                  >experiencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#proyectos">servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#publicaciones"
+                  >publicaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#contacto">contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- fin de cabecera -->
+    <main id="post">
+      <section class="container main-post">
+        <article class="row d-flex justify-content-center">
+          <div class="col-md-8">
+            <p class="label-post">blog</p>
+            <h2>
+              Páginas web estáticas vs páginas web dinámicas
+            </h2>
+            <div class="d-flex">
+              <img
+                src="../assets/img/post_4.jpg"
+                alt="Páginas web estáticas vs páginas web dinámicas"
+              />
+            </div>
+
+            <p class="lighting">
+              Cuando se trata de desarrollar un sitio web lo primero que debes
+              considerar es cómo lo quieres construir, como un sitio web
+              estático o como un sitio web dinámico. Pero, ¿qué hace que un
+              sitio web sea categorizado “estático” o “dinámico”?
+            </p>
+            <h3>Comunicación entre servidores y navegadores web</h3>
+            <p>
+              Para entender la comunicación más básica que ocurre en Internet,
+              debemos saber que en ella están involucrados un servidor web, como
+              IIS, Apache o NGINX, que contiene los archivos HTML, CSS y
+              JavaScript de las páginas web, y un cliente, el navegador (Chrome,
+              Firefox, Edge).
+            </p>
+            <p>
+              El servidor web y el cliente se comunican a través de los
+              protocolos HTTP (Hypertext Transfer Protocol), el protocolo de
+              Transferencia de Hipertexto y la versión segura HTTPS (HyperText
+              Transfer Protocol Secure), una serie de reglas que permiten la
+              transferencia de información a través de archivos en la Internet.
+              La diferencia principal entre HTTP y HTTPS, es que, con este
+              último, la comunicación entre el servidor y el cliente es cifrada
+              permitiendo que la transmisión de los datos sea segura, brindando
+              mayor integridad y confidencialidad a los mismos.
+            </p>
+            <p>
+              La comunicación entre ellos inicia cuando el usuario, a través del
+              navegador, ingresa la dirección de un sitio web (conocida como la
+              URL del inglés Uniform Resource Locator ó LRU que se refiere al
+              Localizador de Recursos Uniforme en español), generando una
+              petición al servidor web para encontrar los archivos de dicha
+              página en dónde están alojados (HTTP request). Luego, el servidor
+              web responde a la petición y devuelve los archivos del sitio web
+              (HTTP response). La respuesta llega al navegador como una copia en
+              formato HTML de la página web, y es en este momento cuando el
+              usuario puede verla en su pantalla.
+            </p>
+
+            <h3>Qué es una página web estática</h3>
+            <p>
+              Lo primero que debemos entender es ¿a qué nos referimos con la
+              palabra estática en el contexto de una página web?, y no es más
+              que aquello que en el ámbito del código fuente del sitio web se
+              encuentra fijo, no se mueve ni cambia de ninguna manera. Cuando
+              hablamos de “estático” también podemos referirnos a que la página
+              web tiene un número fijo de página, es decir, que tal como fue
+              diseñada y almacenada en el servidor web, así mismo la recibe el
+              navegador y la ve el usuario, como un número fijo de páginas HTML.
+            </p>
+            <p>
+              Una página web estática está compuesta por archivos HTML
+              individuales por cada página que son pre-generados y presentados
+              al usuario a través del navegador de la misma forma.
+            </p>
+            <p>
+              Como una página web estática básica está compuesta por elementos
+              como títulos, cuadros de textos, etiquetas, imágenes y otros
+              elementos multimedia, un usuario solo puede interactuar con una
+              página web estática a través de lo que permiten los elementos
+              HTML, por ejemplo haciendo clic en enlaces, botones o rellenando
+              formularios como el clásico formulario de subscripción.
+            </p>
+            <p>
+              No son tan complejos técnicamente como un sitio web dinámico, pero
+              tampoco son tan versátiles y efectivos cuando se trata de entregar
+              funcionalidad. En pocas palabras, en una página web estática,
+              verás la misma información, diseño y contenido cada vez que la
+              visites, a menos que alguien aplique cambios al código fuente de
+              forma manual.
+            </p>
+            <p>
+              Si quisieras crear una página web estática solo necesitas un
+              editor de texto como el Bloc de notas y saber de HTML y CSS, no es
+              necesario utilizar entornos de desarrollo complejos.
+            </p>
+            <h3>
+              Qué es una página web dinámica
+            </h3>
+            <p>
+              La palabra dinámica se refiere a elementos que cambian
+              continuamente, son interactivos y funcionales, en lugar de ser
+              simplemente informativos. Por supuesto, eso requiere utilizar más
+              que solo código HTML y CSS.
+            </p>
+            <p>
+              En comparación con las páginas web estáticas, que son
+              mayoritariamente informativas, una página web dinámica incluye
+              aspectos que se caracterizan por la interactividad y la
+              funcionalidad, por ejemplo, los usuarios pueden interactuar con la
+              información que se presenta en la página gracias a las
+              instrucciones creadas a través de los lenguajes de programación y
+              la base de datos sobre la que está construida.
+            </p>
+            <p>
+              Los sitios web dinámicos basan su comportamiento y funcionalidad
+              en dos tipos de programación, <strong>front-end</strong> (del lado
+              del cliente) y <strong>back-end</strong> (<em
+                >del lado del servidor</em
+              >). Las instrucciones del lado del cliente es código JavaScript
+              que se ejecuta en el navegador. Mientras que las instrucciones que
+              se ejecutan del lado del servidor son instrucciones escritas en
+              lenguajes de scripting o programación, como ASP.Net, PHP, Python,
+              etc. y que son ejecutadas para crear lo que el usuario ha
+              solicitado en su interacción con la página.
+            </p>
+            <p>
+              Una vez ejecutadas las instrucciones en el servidor, un nuevo HTTP
+              response se envía al navegador del usuario para mostrarle lo que
+              ha solicitado. El resultado final es el mismo que en un sitio web
+              estático: una página HTML que el usuario ve desde el navegador.
+            </p>
+            <p>
+              Por resumir, una página web dinámica puede ser más compleja cuando
+              hablamos de su diseño y desarrollo, pero también es más versátil
+              cuando se trata de la funcionalidad que ofrece.
+            </p>
+
+            <h3>Página web dinámica vs estática: Conclusión</h3>
+            <p>
+              En conclusión, si tienes que crear una página web y debes tomar la
+              decisión entre crear una página web estática o una dinámica, debe
+              basar tu decisión principalmente en los objetivos que quieres
+              cumplir con tu página web y los recursos de tiempo y conocimientos
+              que tengas disponibles.
+            </p>
+            <p>
+              La mayoría de las personas que no poseen conocimientos técnicos de
+              diseño y desarrollo de páginas web, prefieren los sitios web
+              dinámicos porque a través de plataformas CMS como WordPress,
+              Joomla, Drupal o Ghost pueden crear sitios web dinámicos de una
+              forma muy fácil y rápida, a la vez que son más fáciles de mantener
+              a largo plazo.
+            </p>
+            <p>
+              Si bien es cierto que las páginas web dinámicas ofrecen más
+              posibilidades, pueden ser mucho más complejas de construir y
+              mantener para los usuarios que no tengan conocimientos técnicos y
+              deseen incorporar integraciones que no ofrezcan los CMS; mientras
+              que las páginas web estáticas son algo más limitadas, pero en
+              principio son mucho más simples de crear y mantener si posees
+              conocimientos en HTML y CSS.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="arti-list">
+        <h3>Articulos Relacionados</h3>
+
+        <div class="container row d-flex justify-content-center">
+          <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
+            <img
+              src="../assets/img/post_1.png"
+              class="card-img-top"
+              alt="destacado"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                ¿Qué es React y cómo funciona?
+              </h4>
+
+              <a href="./post.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-plus-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
+            <img
+              src="../assets/img/post_2.png"
+              class="card-img-top"
+              alt="destacado"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                ¿Qué es Diseño UX/UI y qué hace un Diseñador UX/UI?
+              </h4>
+
+              <a href="./post_2.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-plus-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
+            <img
+              src="../assets/img/post_3.jpg"
+              class="card-img-top"
+              alt="destacado"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                ¿Cuál es la diferencia entre hosting y dominio?
+              </h4>
+
+              <a href="./post_3.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-plus-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- inicio Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row footer-nav">
+          <div class="col-md-3 logo-footer">
+            <img
+              class="isotipo"
+              src="../assets/img/isotipo.png"
+              alt="Lucas Raffaelli"
+            />
+            <h3>Lucas Raffaelli</h3>
+          </div>
+          <nav class="navbar-footer col-md-9">
+            <ul class="nav menu-footer">
+              <li class="nav-item">
+                <a class="nav-link link-a active" href="../../#inicio"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#experiencia"
+                  >EXPERIENCIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#proyectos">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#publicaciones"
+                  >PUBLICACIONES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#contacto">CONTACTO</a>
+              </li>
+            </ul>
+
+            <div class="social">
+              <a href="https://es-la.facebook.com" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </a>
+
+              <a href="https://www.instagram.com/lucasraffaelli/?hl=es-la" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/lucas-raffaelli/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </a>
+
+              <a href="https://github.com/Lraffaelli" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- fin Footer -->
+    <!-- Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var myModal = document.getElementById("myModal");
+      var myInput = document.getElementById("myInput");
+
+      myModal.addEventListener("shown.bs.modal", function () {
+        myInput.focus();
+      });
+    </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

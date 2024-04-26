@@ -1,0 +1,68 @@
+@import "../base/_colors";
+@import "../base/_variable";
+@import "../base/_mixins";
+
+#footer {
+  background-color: #0d0d19;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: $white;
+  border-top: 2px inset $dark-blue;
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .navbar-footer{      
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;   
+    }
+  }
+  .social {
+    @extend %social-footer;
+  }
+
+  .logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .isotipo {
+        height: 50px;
+        margin: 0 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-decoration: none;
+        color: $white;
+    }
+} 
+
+  .menu-footer {
+    .link-a {
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      &:hover {
+        color:$ligth-blue;
+        font-weight: 600;
+      }
+    }
+  }
+}

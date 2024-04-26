@@ -1,0 +1,1230 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "oswald-regular";
+  src: url(../src/assets/fonts/oswald/Oswald-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "oswald-medium";
+  src: url(../src/assets/fonts/oswald/Oswald-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "oswald-bold";
+  src: url(../src/assets/fonts/oswald/Oswald-Bold.ttf) format("ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#publicaciones .section-title, #experiencia .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#proyectos .grid .list-grid, #proyectos, #experiencia .experiencia .card .job-data, #experiencia .experiencia .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .social, #contacto .box-form .social {
+  display: flex;
+  flex-direction: row;
+}
+#footer .social a, #contacto .box-form .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#footer .social a:hover, #contacto .box-form .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #0d3b66;
+  margin-bottom: 140px;
+  z-index: 100;
+}
+.header .navbar-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.header .navbar-header .logo-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar-header .logo-header .isotipo {
+  height: 50px;
+  margin: 0 10px;
+}
+.header .navbar-header .logo-header h1 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+.header .navbar-header .menu .link-a {
+  font-size: 14px;
+  color: #666;
+  margin-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.header .navbar-header .menu .link-a:hover {
+  color: #0489fd;
+  font-weight: 600;
+}
+
+#publicaciones .section-title, #experiencia .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#proyectos .grid .list-grid, #proyectos, #experiencia .experiencia .card .job-data, #experiencia .experiencia .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .social, #contacto .box-form .social {
+  display: flex;
+  flex-direction: row;
+}
+#footer .social a, #contacto .box-form .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#footer .social a:hover, #contacto .box-form .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+#experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  margin-top: 2em;
+}
+#experiencia .experiencia {
+  flex-wrap: wrap;
+}
+#experiencia .experiencia .card {
+  /*  position: relative; */
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: black;
+  border: none;
+}
+#experiencia .experiencia .card:hover img {
+  transform: scale(1.1);
+  filter: blur(5px);
+  opacity: 40%;
+}
+#experiencia .experiencia .card:hover .job-data {
+  opacity: 100;
+}
+#experiencia .experiencia .card .job-data {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  transition: all 1000ms;
+}
+#experiencia .experiencia .card .job-data h3 {
+  font-size: 18px;
+  color: #fff;
+  margin: 10px 0;
+  text-shadow: 0px 0px 5px #777;
+  /* background-color: rgba(102, 102, 102, 0.75); */
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+}
+#experiencia .experiencia .card .job-data p {
+  font-size: 14px;
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-shadow: 0px 0px 5px #777;
+}
+#experiencia .experiencia .card .job-data .btn-data {
+  display: block;
+  width: 7em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1.5px solid #75E6DA;
+  padding: 0.5em;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 500ms;
+}
+#experiencia .experiencia .card .job-data .btn-data:hover {
+  width: 110px;
+  background-color: #75e6c4a3;
+}
+#experiencia .experiencia .card img {
+  width: 110%;
+  z-index: 1;
+  transition: all 500ms;
+  filter: blur(0px);
+  opacity: 100;
+}
+#experiencia .experiencia .mi-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experiencia .experiencia .mi-modal img {
+  width: 100%;
+}
+#experiencia .experiencia .mi-modal h3 {
+  font-size: 18px;
+}
+
+#inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../../src/assets/img/bg_dev2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#inicio .title {
+  align-self: center;
+  color: #fff;
+  text-shadow: 0px 0px 3px #444;
+}
+#inicio .title h2 {
+  font-size: 50px;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+#inicio .title p {
+  font-size: 18px;
+  width: 60%;
+  margin-bottom: 15px;
+}
+#inicio .title p .btn-mio {
+  display: flex;
+  justify-content: center;
+  width: 130px;
+  margin: 15px auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  background-color: #6f96cb;
+  padding: 0.2em;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 500ms;
+}
+#inicio .title p .btn-mio:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #272727;
+  text-shadow: none;
+  /* width: 30%; */
+}
+#inicio .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* top: 40%;
+  right: 14%;
+   */
+}
+#inicio .social a {
+  color: #fff;
+  width: 35px;
+  margin: 10px 0;
+  transition: 300ms;
+}
+#inicio .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+#publicaciones .section-title, #experiencia .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#proyectos .grid .list-grid, #proyectos, #experiencia .experiencia .card, #experiencia .experiencia .card .job-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .social, #contacto .box-form .social {
+  display: flex;
+  flex-direction: row;
+}
+#footer .social a, #contacto .box-form .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#footer .social a:hover, #contacto .box-form .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+#experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  margin-top: 2em;
+}
+#experiencia .experiencia {
+  flex-wrap: wrap;
+}
+#experiencia .experiencia .card {
+  /*  position: relative; */
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: black;
+  border: none;
+}
+#experiencia .experiencia .card:hover img {
+  transform: scale(1.1);
+  filter: blur(5px);
+  opacity: 40%;
+}
+#experiencia .experiencia .card:hover .job-data {
+  opacity: 100;
+}
+#experiencia .experiencia .card .job-data {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  transition: all 1000ms;
+}
+#experiencia .experiencia .card .job-data h3 {
+  font-size: 18px;
+  color: #fff;
+  margin: 10px 0;
+  text-shadow: 0px 0px 5px #777;
+  /* background-color: rgba(102, 102, 102, 0.75); */
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+}
+#experiencia .experiencia .card .job-data p {
+  font-size: 14px;
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-shadow: 0px 0px 5px #777;
+}
+#experiencia .experiencia .card .job-data .btn-data {
+  display: block;
+  width: 7em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1.5px solid #75E6DA;
+  padding: 0.5em;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 500ms;
+}
+#experiencia .experiencia .card .job-data .btn-data:hover {
+  width: 110px;
+  background-color: #75e6c4a3;
+}
+#experiencia .experiencia .card img {
+  width: 110%;
+  z-index: 1;
+  transition: all 500ms;
+  filter: blur(0px);
+  opacity: 100;
+}
+#experiencia .experiencia .mi-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experiencia .experiencia .mi-modal img {
+  width: 100%;
+}
+#experiencia .experiencia .mi-modal h3 {
+  font-size: 18px;
+}
+
+#publicaciones .section-title, #experiencia .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#proyectos .grid .list-grid, #proyectos, #experiencia .experiencia .card, #experiencia .experiencia .card .job-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .social, #contacto .box-form .social {
+  display: flex;
+  flex-direction: row;
+}
+#footer .social a, #contacto .box-form .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#footer .social a:hover, #contacto .box-form .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+#proyectos {
+  height: fit-content;
+  background: linear-gradient(270deg, #2aa9e0 0%, #3a508e 100%);
+  padding: 30px 0;
+  height: 100vh;
+  /* INICIO DE GALERIA DE TRABAJOS CON GRID */
+}
+#proyectos h2 {
+  color: #fff;
+}
+#proyectos .grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#proyectos .grid .list-grid {
+  position: relative;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0px 0px 4px #666;
+  overflow: hidden;
+  transition: all 300ms;
+}
+#proyectos .grid .list-grid:hover .title-exper {
+  opacity: 1;
+}
+#proyectos .grid .list-grid:hover .img-grid img {
+  filter: blur(2px);
+  transform: scale(1.1);
+}
+#proyectos .grid .list-grid .title-exper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(4, 106, 201, 0.6);
+  color: #fff;
+  text-shadow: 0px 0px 5px #777;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 1;
+  cursor: pointer;
+}
+#proyectos .grid .list-grid .title-exper h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+#proyectos .grid .list-grid .title-exper p {
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  margin: 0 15px;
+}
+#proyectos .grid .list-grid .img-grid {
+  height: auto;
+}
+#proyectos .grid .list-grid .img-grid img {
+  filter: blur(0px);
+  transition: all 0.3s ease-in;
+}
+
+#publicaciones .section-title, #experiencia .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .social, #contacto .box-form .social {
+  display: flex;
+  flex-direction: row;
+}
+#footer .social a, #contacto .box-form .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#footer .social a:hover, #contacto .box-form .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+/* publicaciones */
+#publicaciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 4em 0;
+}
+#publicaciones .box-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#publicaciones .box-post .post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 3px;
+  padding-bottom: 10px;
+}
+#publicaciones .box-post .post img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#publicaciones .box-post .post span {
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#publicaciones .box-post .post h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+#publicaciones .box-post .post p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  margin: 0 10px;
+}
+#publicaciones .box-post .post svg {
+  color: #0489fd;
+  transition: all 300ms;
+}
+#publicaciones .box-post .post svg:hover {
+  color: #048d22;
+  transform: rotate(45deg);
+}
+
+#experiencia .section-title, #publicaciones .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .social, #contacto .box-form .social {
+  display: flex;
+  flex-direction: row;
+}
+#footer .social a, #contacto .box-form .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#footer .social a:hover, #contacto .box-form .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(270deg, #2aa9e0 0%, #3a508e 100%);
+  color: #fff;
+  padding-bottom: 50px;
+}
+#contacto .box-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+#contacto .box-form h2 {
+  text-align: center;
+}
+#contacto .box-form h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+#contacto .box-form h4 {
+  font-size: 15px;
+  color: #ccc;
+  text-transform: uppercase;
+}
+#contacto .box-form p {
+  letter-spacing: 2px;
+}
+#contacto .box-form p a {
+  text-decoration: none;
+  color: #fff;
+}
+#contacto .box-form .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#contacto .box-form .contact-form label {
+  font-size: 15px;
+  margin: 5px 0;
+  align-self: flex-start;
+  text-transform: uppercase;
+}
+#contacto .box-form .contact-form input,
+#contacto .box-form .contact-form textarea {
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+#contacto .box-form .contact-form input {
+  height: 2em;
+}
+#contacto .box-form .contact-form button {
+  width: 120px;
+  padding: 3px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 300ms;
+}
+#contacto .box-form .contact-form button:hover {
+  background-color: #007f5f;
+  color: #fff;
+  cursor: pointer;
+}
+
+#experiencia .section-title, #publicaciones .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .social, #contacto .box-form .social {
+  display: flex;
+  flex-direction: row;
+}
+#footer .social a, #contacto .box-form .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#footer .social a:hover, #contacto .box-form .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+#footer {
+  background-color: #0d0d19;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: #fff;
+  border-top: 2px inset #0d3b66;
+}
+#footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footer-nav .navbar-footer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+#footer .logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer .logo-footer .isotipo {
+  height: 50px;
+  margin: 0 10px;
+}
+#footer .logo-footer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #fff;
+}
+#footer .menu-footer .link-a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#footer .menu-footer .link-a:hover {
+  color: #0489fd;
+  font-weight: 600;
+}
+
+#experiencia .section-title, #publicaciones .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacto .box-form .social, #footer .social {
+  display: flex;
+  flex-direction: row;
+}
+#contacto .box-form .social a, #footer .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#contacto .box-form .social a:hover, #footer .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+.section-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.section-bio .about-me {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section-bio .about-me h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 0.2em;
+  color: #00ec00;
+}
+.section-bio .about-me p {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #05e1e9;
+}
+.section-bio .about-me p::before {
+  content: "{";
+  color: #fab802;
+  font-size: 150px;
+}
+.section-bio .about-me p::after {
+  position: relative;
+  top: 150px;
+  content: "}";
+  color: #fab802;
+  font-size: 150px;
+}
+
+.habilidades {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: fit-content;
+  padding-bottom: 30px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.habilidades .box-hab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.habilidades .box-hab h3 {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.habilidades .box-hab .h-icon {
+  width: 130px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.habilidades .box-hab .h-icon img {
+  width: 80%;
+  transition: all 300ms;
+}
+.habilidades .box-hab .h-icon img:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+.habilidades .box-hab .btn-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+#experiencia .section-title, #publicaciones .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacto .box-form .social, #footer .social {
+  display: flex;
+  flex-direction: row;
+}
+#contacto .box-form .social a, #footer .social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 300ms;
+}
+#contacto .box-form .social a:hover, #footer .social a:hover {
+  color: #0489fd;
+  transform: scale(1.3);
+}
+
+#post {
+  background-image: linear-gradient(to top, #434343 0%, black 100%);
+}
+#post .main-post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+#post .main-post .label-post {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+#post .main-post .label-post::before {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid #fff;
+  width: 6rem;
+  transform: translateY(-4px);
+  margin-right: 10px;
+}
+#post .main-post img {
+  width: 80%;
+  margin: 10px auto;
+}
+#post .main-post h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+#post .main-post h3 {
+  padding: 10px 0;
+}
+#post .main-post .lighting {
+  display: flex;
+  align-items: baseline;
+  margin: 0 auto 45px auto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  width: 85%;
+}
+#post .main-post .lighting::before {
+  position: relative;
+  top: 10px;
+  content: open-quote;
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  color: #0489fd;
+}
+#post .main-post .lighting::after {
+  position: relative;
+  top: 1.7em;
+  content: close-quote;
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  color: #0489fd;
+}
+#post .main-post p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+#post .arti-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#post .arti-list h3 {
+  margin: 20px 0;
+  color: #fff;
+}
+#post .arti-list .relacionado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  padding: 0;
+  margin: 30px 15px;
+  border: none;
+}
+#post .arti-list .relacionado h4 {
+  font-size: 1.3em;
+  text-align: center;
+}
+#post .arti-list .relacionado p {
+  font-size: 15px;
+}
+#post .arti-list .relacionado img {
+  width: 100%;
+}
+#post .arti-list .relacionado svg {
+  display: flex;
+  color: #0489fd;
+  margin: 10px auto;
+  transition: all 300ms;
+}
+#post .arti-list .relacionado svg:hover {
+  color: #048d22;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+  .navbar-header {
+    justify-content: space-between;
+  }
+
+  #experiencia {
+    margin-bottom: 7em;
+  }
+
+  #footer .footer-nav .navbar-footer {
+    justify-content: center;
+  }
+
+  .section-bio .about-me p::after {
+    top: 235px;
+  }
+}
+@media (max-width: 768px) {
+  .social {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+  }
+  .social a {
+    color: #000;
+    margin: 0;
+  }
+
+  #post .main-post img {
+    width: 100%;
+    margin: 0;
+  }
+  #post .main-post .lighting {
+    width: 100%;
+  }
+  #post .main-post .lighting::after {
+    top: 2.5em;
+  }
+
+  .box-form {
+    width: 100%;
+  }
+
+  #proyectos {
+    height: fit-content;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #footer .footer-nav .logo-footer {
+    flex-direction: row;
+  }
+  #footer .footer-nav .navbar-footer {
+    justify-content: flex-end;
+  }
+
+  .section-bio .about-me {
+    margin-top: 130px;
+  }
+  .section-bio .about-me p::after {
+    top: 375px;
+  }
+
+  .habilidades .box-hab h3 {
+    margin-top: 30px;
+  }
+  .habilidades .box-hab .btn-contact {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 425px) {
+  #inicio .title {
+    margin-top: 120px;
+  }
+  #inicio .title p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #inicio .social {
+    flex-direction: row;
+  }
+
+  #post .main-post .label-post {
+    margin-top: 50px;
+  }
+  #post .main-post h2 {
+    text-align: center;
+  }
+  #post .main-post .lighting {
+    width: 100%;
+  }
+  #post .main-post .lighting::after {
+    top: 3em;
+  }
+
+  #footer .footer-nav .logo-footer {
+    flex-direction: column;
+  }
+  #footer .footer-nav .navbar-footer {
+    justify-content: center;
+  }
+
+  .section-bio .about-me {
+    flex-direction: column;
+  }
+  .section-bio .about-me p::before {
+    display: none;
+  }
+  .section-bio .about-me p::after {
+    display: none;
+  }
+
+  .habilidades .box-hab .h-icon {
+    width: 100px;
+  }
+}
+@media (max-width: 375px) {
+  .header .navbar-header {
+    justify-content: center;
+  }
+
+  #post .main-post .lighting {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  #post .main-post .lighting::after {
+    display: none;
+  }
+  #post .main-post .lighting::before {
+    display: none;
+  }
+  #post .main-post p {
+    padding: 0 10px;
+  }
+  #post .main-post .label-post {
+    margin-top: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

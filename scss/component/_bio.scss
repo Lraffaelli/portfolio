@@ -1,0 +1,91 @@
+@import "../base/_colors";
+@import "../base/_variable";
+@import "../base/mixins";
+
+.section-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+    .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+        h2 {
+                       
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.5em;
+            padding: 0.2em;
+            color: rgb(0, 236, 0);
+           
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            color: rgb(5, 225, 233);
+            &::before {
+                content: "{";
+                color: rgb(250, 184, 2);
+                font-size: 150px;
+            }
+
+            &::after {
+                position: relative;
+                top: 150px;
+                content: "}";
+                color: rgb(250, 184, 2);
+                font-size: 150px;
+            }
+        }
+    }
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+    .box-hab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        h3 {
+            margin: 0 auto;
+            text-align: center;
+            color: $white;
+            margin-bottom: 20px;
+        }
+        .h-icon{
+            width: 130px;
+            margin-top: 35px;
+            cursor: pointer;
+            img{
+                width: 80%; 
+                transition: all 300ms;
+                
+                &:hover{
+                    transform: scale(1.1) rotate(10deg);
+                }
+            };
+        }
+        .btn-contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px auto;
+        }
+    }
+}

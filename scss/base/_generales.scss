@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "oswald-regular";
+    src: url(../src/assets/fonts/oswald/Oswald-Regular.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "oswald-medium";
+    src: url(../src/assets/fonts/oswald/Oswald-Medium.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: "oswald-bold";
+    src: url(../src/assets/fonts/oswald/Oswald-Bold.ttf) format("ttf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      
+    font-family: "Raleway", sans-serif;
+  }
+  
+  
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+  
